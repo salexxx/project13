@@ -7,7 +7,6 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-const path = require('path');
 const userRout = require('./routes/users');
 const cardRout = require('./routes/cards');
 
@@ -24,8 +23,6 @@ app.use((req, res, next) => {
 
   next();
 });
-
-app.use(express.static(path.join(__dirname, '/public')));
 
 app.use('/users', userRout);
 app.use('/cards', cardRout);
