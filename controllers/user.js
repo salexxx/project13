@@ -14,7 +14,7 @@ module.exports.createUser = (req, res) => {
 };
 module.exports.getUser = (req, res) => {
   user
-    .findById(req.params.id)
+    .findById(req.params.id).orFail()
     .then((someuser) => res.send({ data: someuser }))
     .catch((err) => res.status(404).send({ err, message: 'Пользователь не найден' }));
 };

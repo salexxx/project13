@@ -11,7 +11,7 @@ module.exports.createCard = (req, res) => {
   сard
     .create({ name, link, owner: req.user._id })
     .then((cards) => res.status(200).send({ data: cards }))
-    .catch((err) => res.status(500).send({ err, message: 'Что - то не так!' }));
+    .catch((err) => res.status(500).send({ data: err.message }));
 };
 module.exports.deleteCard = (req, res) => {
   сard
