@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
-// eslint-disable-next-line no-useless-escape
-// const Url = /^(https|http):\/\/(www\.{1})?(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|[\w\.\-_]+\.[a-z]{2,})(:\d{2,5})?((\/[a-z0-9-%_]{1,})*)?(\/|#)?(\.[a-z]{1,3})?$/;
 
 const cardSchema = new mongoose.Schema({
   name: {
