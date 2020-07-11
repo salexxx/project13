@@ -10,7 +10,7 @@ module.exports.createUser = (req, res) => {
   user
     .create({ name, about, avatar })
     .then((users) => res.status(200).send({ data: users }))
-    .catch((err) => res.status(500).send({ err, message: 'Что - то не так!' }));
+    .catch((err) => res.status(500).send({ message: err.message }));
 };
 module.exports.getUser = (req, res) => {
   user
