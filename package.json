@@ -1,7 +1,7 @@
 {
-  "name": "project12",
+  "name": "project13",
   "version": "0.0.1",
-  "description": "project12 yandex-praktikum",
+  "description": "project13 yandex-praktikum",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -14,10 +14,12 @@
     "eslint": "^7.3.1",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.21.2",
-    "express": "^4.17.1",
     "nodemon": "^2.0.4"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.22",
+    "validator": "^13.1.1"
   }
 }
